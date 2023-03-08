@@ -122,6 +122,8 @@ const App = () => {
       });
       console.log('Connected: ', accounts[0]);
       setCurrentAccount(accounts[0]);
+      // Assuming the account exists
+      getAllWaves();
     } catch (error) {
       console.log(error);
     }
